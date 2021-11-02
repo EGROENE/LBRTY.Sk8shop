@@ -1,0 +1,264 @@
+body {
+    background: linear-gradient(to bottom, rgb(65, 65, 65), lightgray);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: larger;
+    letter-spacing: 5px;
+}
+
+a {
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.page-container {
+    display: grid;
+    row-gap: 30px;
+}
+
+.page-header {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas: 
+    "page-header-image page-header-image page-header-card1"
+    "page-header-image page-header-image page-header-card2";
+}
+
+.page-header-image {
+    grid-area: page-header-image;
+    background: url(https://th-thumbnailer.cdn-si-edu.com/jvHOmY-iwUdnn_OtBdqKLB26A0Y=/fit-in/1072x0/https://tf-cmsv2-photocontest-smithsonianmag-prod-approved.s3.amazonaws.com/25130c604ff80fac83fdc58ed43e4a6149c9cddd.JPG);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.header-titles {
+    padding: 30px;
+}
+
+.header-titles h1, h2 {
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+}
+
+.page-header-card1 {
+    background-color: blue;
+    grid-area: page-header-card1;
+}
+
+.page-header-card2 {
+    grid-area: page-header-card2;
+    background-color: red;
+}
+
+.page-header-card1, .page-header-card2 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page-header-card1:hover, .page-header-card2:hover {
+    background-color: white;
+    color: black;
+}
+
+.page-header-card1 p, .page-header-card2 p {
+    margin: 0;
+    font-size: xxx-large;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.nav-item:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.brand-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.brand-cards a {
+    color: black;
+    text-decoration: none;
+}
+
+.brand {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.brand:first-child, .brand:nth-child(3) {
+    background-color: blue;
+    color: white;
+}
+
+.brand:nth-child(2), .brand:last-child {
+    background-color: red;
+    color: white;
+}
+
+.brand:first-child:hover, .brand:nth-child(2):hover, .brand:nth-child(3):hover, .brand:last-child:hover {
+    background-color: black;
+    color: white;
+}
+
+.brand img {
+    width: 100px;
+}
+
+.brand h3 {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.brand sup {
+    font-size: 9px;
+}
+
+.featured-1, .featured-2 {
+    border: 2px dashed black;
+    display: grid;
+    column-gap: 20px;
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 
+    "text img img"
+    "text img img";
+}
+
+.featured-1 {
+    grid-template-areas: 
+    "img img text"
+    "img img text";
+}
+.featured-1 img, .featured-2 img {
+    max-width: 100%;
+}
+
+.featured-1 a, .featured-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.featured-1 a:hover, .featured-2 a:hover {
+    color: black;
+}
+
+.featured-1 h3, p, .featured-2 h3, p {
+    font-weight: bolder;
+}
+
+.featured-1 sup, .featured-2 sup {
+    font-size: 14px;
+}
+
+.featured-1 div:first-child, .featured-2 div:first-child {
+    grid-area: img;
+}
+
+.featured-1 div:last-child, .featured-2 div:last-child {
+    grid-area: text;
+}
+
+.gram {
+    margin: 20px;
+}
+
+.gram-title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.gram-title a {
+    color: blue;
+}
+
+.gram-title a:hover {
+    color: red;
+} 
+
+.gram-title div:first-child {
+    color: transparent;
+    display: flex;
+    background: linear-gradient(to right, red, white, blue);
+}
+
+.gram-title div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.gram-title div:last-child {
+    color: transparent;
+    display: flex;
+    background: linear-gradient(to right, blue, white, red);
+}
+
+.gram-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.gram-gallery a img {
+    width: 100%;
+    height: 100%;
+}
+
+.gram-gallery a img:hover {
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 768px) {
+    .brand-cards a:nth-child(2) {
+        background-color: red;
+    }
+
+    .brand-cards a:nth-child(3) {
+        background-color: red;
+    }
+
+    .brand-cards a:last-child {
+        background-color: blue;
+    }
+}
