@@ -1,3 +1,137 @@
+/* START min-width: 2560px */
+@media (min-width: 2560px) {
+    .page-header-image {
+        background-position: center;
+        padding: 285px 20px 10px 5px;
+        border-radius: 15px;
+    }
+    
+    .header-titles h1, h2 {
+        background-color: white;
+        width: fit-content;
+        padding: 10px;
+        font-size: 100px;
+    }
+
+    .page-header-card1, 
+    .page-header-card2 {
+        color: white;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .page-header-card1 h3,
+    .page-header-card2 h3 {
+        font-size: 50px;
+    }
+
+    .page-header-card1 p,
+    .page-header-card2 p {
+        font-size: 75px;
+    }
+
+    .featured-1 h3, p, 
+    .featured-2 h3, p {
+        font-weight: bolder;
+        font-size: xxx-large;
+    }
+
+    .brand img {
+        width: 215px;
+    }
+
+    .brand h3 {
+        margin: 0;
+        margin-top: 16px;
+        font-size: 60px;
+    }
+
+    .featured-1 img, .featured-2 img {
+        /* max-width: 100%; */
+        width: 1050px;
+    }
+
+    .gram-title {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 25px;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .gram-title header {
+        font-size: 55px;
+        margin-left: 7px;
+    }
+
+    .gram-title div:first-child,
+    .gram-title div:last-child {
+        color: transparent;
+        display: flex;
+        background: linear-gradient(to right, red, white, blue);
+        height: 200px;
+    }
+
+    .gram-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(612px, 1fr));
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+/* END min-width: 2560px */
+
+/* START min-width: 1440px & max-width: 2559px */
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .header-titles {
+        padding: 0px;
+    }
+
+    .header-titles h1, h2 {
+        font-size: xxx-large;
+    }
+
+    .page-header-card1 h3,
+    .page-header-card2 h3 {
+        font-size: xx-large;
+    }
+
+    .page-header-card1 p,
+    .page-header-card2 p {
+        font-size: 70px;
+    }
+
+    .featured-1 h3, p, 
+    .featured-2 h3, p {
+        font-size: xx-large;
+    }
+
+    .brand img {
+        width: 165px;
+    }
+
+    .brand h3 {
+        margin: 0;
+        margin-top: 16px;
+        font-size: xxx-large;
+    }
+
+    .gram-title header {
+        font-size: xx-large;
+    }
+
+    .gram-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+/* END min-width: 1440px & max-width: 2559px */
+
 /* START max-width: 768px */
 @media (max-width: 768px) {
     .brand-cards a:nth-child(2) {
@@ -16,11 +150,70 @@
 
 /* START max-width: 425px */
 @media (max-width: 425px) {
+    .page-header {
+        grid-template-areas:
+        "page-header-image"
+        "page-header-card1"
+        "page-header-card2";
+    }
+
+    .page-header-image {
+        padding: 110px 30px 10px 10px;
+    }
+
+    .header-titles {
+        padding: 30px 30px 0px 0px;
+    }
+
+    .header-titles h1, h2 {
+        background-color: white;
+        width: fit-content;
+        padding: 5px;
+    }
+
+    .header-titles h2 {
+        font-size: medium;
+    }
+
+    .page-header-card1, .page-header-card2 {
+        padding: 5px;
+    }
+
+    .page-header-card1 h3 {
+        margin: 0;
+    }
+
+    .page-header-card1 p, .page-header-card2 p {
+        font-size: xx-large;
+    }
+
     .featured-1,
     .featured-2 {
         grid-template-areas:
         "img img"
         "text text";
+        padding: 20px;
+    }
+
+    .featured-1 h3, p, 
+    .featured-2 h3, p {
+        font-size: medium;
+    }
+
+    .brand-cards a:nth-child(3) {
+        background-color: blue;
+    }
+
+    .brand-cards a:last-child {
+        background-color: red;
+    }
+
+    .gram-title div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 /* END max-width: 425px */
