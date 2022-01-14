@@ -1,0 +1,26 @@
+/* START max-width: 768px */
+@media (max-width: 768px) {
+    .brand-cards a:nth-child(2) {
+        background-color: red;
+    }
+
+    .brand-cards a:nth-child(3) {
+        background-color: red;
+    }
+
+    .brand-cards a:last-child {
+        background-color: blue;
+    }
+}
+/* END max-width: 768px */
+
+/* START max-width: 425px */
+@media (max-width: 425px) {
+    .featured-1,
+    .featured-2 {
+        grid-template-areas:
+        "img img"
+        "text text";
+    }
+}
+/* END max-width: 425px */
